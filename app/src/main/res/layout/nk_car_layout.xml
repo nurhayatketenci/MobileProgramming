@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nk_linear"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/nk_imageView2"
+            android:layout_width="288dp"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/nk_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nk_txtdetail_carName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ARABA ADI" />
+
+            <TextView
+                android:id="@+id/nk_txtdetail_dailyPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GÜNLÜK ÜCRET" />
+
+            <TextView
+                android:id="@+id/nk_txtdetail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AÇIKLAMA" />
+
+            <TextView
+                android:id="@+id/nk_txtDetail_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARKA" />
+
+            <TextView
+                android:id="@+id/nk_txtDetail_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RENK" />
+
+            <TextView
+                android:id="@+id/nk_txtDetail_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KM" />
+
+            <TextView
+                android:id="@+id/nk_txtDetail_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ZAMAN ARALIĞI" />
+
+            <Button
+                android:id="@+id/nk_btndetail_carRent"
+                android:layout_width="123dp"
+                android:layout_height="37dp"
+                android:text="ARACI KİRALA"
+                android:textSize="8sp"
+                app:backgroundTint="#FFEB3B" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nk_colors">
+        <item>Beyaz</item>
+        <item>Siyah</item>
+        <item>Kırmızı</item>
+        <item>Mavi</item>
+        <item>Sarı</item>
+    </string-array>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NK_MainActivity">
+
+    <TextView
+        android:id="@+id/nk_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Rent A Car"
+        android:textColor="#FFEB3B"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nk_txtdetail_carName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nk_txt_modelYear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="MODEL"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nk_txt_dailyPrice"
+        app:layout_constraintEnd_toEndOf="@+id/nk_txt_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_txtdetail_carName" />
+
+    <EditText
+        android:id="@+id/nk_txt_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="AÇIKLAMA"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nk_spinner_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_txt_dailyPrice" />
+
+    <EditText
+        android:id="@+id/nk_txt_dailyPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="GÜNLÜK ÜCRET"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nk_txt_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_txt_modelYear" />
+
+    <Spinner
+        android:id="@+id/nk_spinner_brand"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="134dp"
+        android:entries="@array/nk_brands"
+        app:layout_constraintBottom_toBottomOf="@+id/nk_checkBox_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_txt_modelYear" />
+
+    <Spinner
+        android:id="@+id/nk_spinner_color"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/nk_colors"
+        app:layout_constraintBottom_toTopOf="@+id/nk_checkBox2_day2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_txt_description" />
+
+    <CheckBox
+        android:id="@+id/nk_checkBox_day"
+        android:layout_width="231dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="0-1 Ay"
+        app:layout_constraintBottom_toTopOf="@+id/nk_rdg_km"
+        app:layout_constraintEnd_toEndOf="@+id/nk_rdg_km"
+        app:layout_constraintStart_toEndOf="@+id/nk_rdg_km"
+        app:layout_constraintTop_toBottomOf="@+id/nk_checkBox2_day2" />
+
+    <ImageView
+        android:id="@+id/nk_imageView_car_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nk_rdg_km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nk_rdg_km"
+        app:layout_constraintTop_toBottomOf="@+id/nk_checkBox_day"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/nk_btn_car_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="nk_car_add"
+        android:text="ARACI EKLE"
+        android:textColor="#080901"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/nk_btn_listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_btn_car_image" />
+
+    <Button
+        android:id="@+id/nk_btn_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ARAÇLARI GÖSTER"
+        android:textColor="#0E0404"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_btn_car_add" />
+
+    <Button
+        android:id="@+id/nk_btn_car_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="nk_car_add"
+        android:text="FOTOĞRAF YÜKLE"
+        android:textColor="#080901"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/nk_btn_car_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_rdg_km" />
+
+    <RadioGroup
+        android:id="@+id/nk_rdg_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/nk_btn_car_image"
+        app:layout_constraintEnd_toStartOf="@+id/nk_imageView_car_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_checkBox_day">
+
+        <RadioButton
+            android:id="@+id/nk_rdb_km2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="100-200KM" />
+
+        <RadioButton
+            android:id="@+id/nk_rdb_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="50-100 KM" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/nk_checkBox2_day2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="1dp"
+        android:text="1-5 Ay"
+        app:layout_constraintBottom_toTopOf="@+id/nk_checkBox_day"
+        app:layout_constraintEnd_toStartOf="@+id/nk_imageView_car_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nk_spinner_color" />
+
+    <EditText
+        android:id="@+id/nk_txtdetail_carName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="ARABA ADI"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nk_txt_modelYear"
+        app:layout_constraintEnd_toEndOf="@+id/nk_txt_modelYear"
+        app:layout_constraintStart_toStartOf="@+id/nk_txt_modelYear"
+        app:layout_constraintTop_toBottomOf="@+id/nk_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
